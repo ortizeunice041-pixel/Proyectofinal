@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <!--fontawesome link del footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--fontawesome link sobre el carrito-->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+</head>
+<body>
+   <header>
+    <div class="header__superior">
+      <a class="logo" href="index.html">
+        <img src="img/logotipo.svg" alt="Logo">
+      </a>
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="#">Mujer</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="catalogodeniños.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comprayventa.html">Compra y venta</a></li>
+                    <li><a href="#">Promociones y novedades</a></li>
+                    <li><a href="carrito.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+
+      <main>
+        <img src="images/1.jpg" alt="Descripción de la imagen">
+      <section class="producto-grid">
+          <!-- aquí todas tus tarjetas de productos -->
+          <!-- (dejé las tarjetas como estaban en tu código original) -->
+          <a class="producto-item blusas" href="blusaformal.html">
+              <img src="images/OIP (1).webp" alt="">
+              <div class="texto">
+                  <div class="hidden offer">Oferta</div>
+                  <h3>Blusa formal manga larga</h3>
+                  <strong class="price">$30.98</strong>
+              </div>
+          </a>
+
+          <!-- ... el resto de tus productos ... -->
+
+          <a class="producto-item blusas" href="blusarayadaformal.html">
+                <img src="images/OIP (12).webp"alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Blusa rallada formal</h3>
+                    <strong class="price">$25.00</strong>
+                </div>
+            </a>
+            <a class="producto-item blusas" href="blusamangalarga.html">
+                <img src="images/MTIZlEtEPR.jpg" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Blusa casual manga larga azul</h3>
+                    <strong class="price">$15.98</strong>
+                </div>
+            </a>
+            <a class="producto-item blusas" href="pantalondevestirnegro.html">
+                <img src="images/OIP (62).webp" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Pantalón de vestir negro</h3>
+                    <strong class="price">$22.95</strong>
+                </div>
+                
+            </a>
+            <a class="producto-item blusas" href="pantalongris.html">
+                <img src="images/pantalon gris mujer.jpeg" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón gris moderno y comodo.</h3>
+                    <strong class="price">$30.45</strong>
+                </div>
+            </a>
+            <a class="producto-item blusas" href="pantalonnegrodevestir.html">
+                <img src="images/pantalón negro de vestir.jpg" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Pantalón negro de vestir versatil.</h3>
+                    <strong class="price">$15.00</strong>
+                </div>
+            </a>
+            <a class="producto-item blusas" href="pantalonazul.html">
+                <img src="images/pantalon jeans.jpg" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón azul comodo y versatil.</h3>
+                    <strong class="price">$35.95</strong>
+                </div>
+            </a>
+            <a class="producto-item blusas" href="pantalonnegro.html">
+                <img src="images/OIP (63).webp" alt="">
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Pantalón negro comodo y sutil.</h3>
+                    <strong class="price">$12.98</strong>
+                </div>
+            </a>
+            <a class="producto-item blusas" href="pantalonblanco.html">
+                <img src="images/OIP (64).webp" alt="">
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón blanco comodo y unico.</h3>
+                    <strong class="price">$23.98</strong>
+               </div>
+            </a>
+
+
+            <a class="producto-item vestidos" href="camisaazulclaroformal.html">
+                <img src="images/OIP (66).webp" alt="">
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Camisa azul claro formal</h3>
+                    <strong class="price">$17.98</strong>
+                </div>
+            </a>
+            <a class="producto-item vestidos" href="camisacolormoradooscuro.html">
+                <img src="images/OIP (65).webp" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Camisa color morado oscuro formal</h3>
+                    <strong class="price">$20.50</strong>
+                </div>
+            </a>
+            <a class="producto-item vestidos" href="camisacolorvinoelegante.html">
+                <img src="images/camisa color vino.webp" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Camisa color vino elegante.</h3>
+                    <strong class="price">$40.98</strong>
+                </div>
+            </a>
+            <a class="producto-item vestidos" href="pantalondevestirazul.html">
+                <img src="images/OIP (67).webp" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Pantalón de vestir azul</h3>
+                    <strong class="price">$22.50</strong>
+                </div>
+            </a>
+            <a class="producto-item vestidos" href="pantalonnegrocomodoyelegante.html">
+                <img src="images/pantalon negro de vestir de hombre.webp" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón Negro comodo y elegante.</h3>
+                    <strong class="price">$35.50</strong>
+                </div>
+            </a>
+
+
+           <a class="producto-item blusas" href="pantalongriscomodoyelegante.html">
+              <img src="images/R (12).jpg" alt="">
+              <div class="texto">
+                  <div class="hidden offer">Oferta</div>
+                  <h3>Pantalón gris comodo y elegante</h3>
+                  <strong class="price">$30.98</strong>
+              </div>
+          </a>
+
+            <a class="producto-item jeans" href="pantalonazulcasual.html">
+                <img src="images/pantalon azul de hombre.webp" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón azul casual.</h3>
+                    <strong class="price">$25.37</strong>
+                </div>
+            </a>
+            <a class="producto-item jeans" href="pantalonnegrocasual.html">
+                <img src="images/pantalón negro de hombre.jpg" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>pantalón negro casual.</h3>
+                    <strong class="price">$36.37</strong>
+                </div>
+            </a>
+            <a class="producto-item jeans" href="pantalongrisversatil.html">
+                <img src="images/pantalon grid de hombre.jpg" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>pantalón gris ancho casual y versatil.</h3>
+                    <strong class="price">$22.66</strong>
+                </div>
+            </a>
+            <a class="producto-item jeans" href="camisaazuleleganteparatupequeño.html">
+                <img src="images/OIP (69).webp" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Camisa azul elegante para tu pequeño.</h3>
+                    <strong class="price">27.50</strong>
+                </div>
+            </a>
+            <a class="producto-item jeans" href="camisaazuleleganteparatupequeña.html">
+                <img src="images/camisa de vestir niña.jpg" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Camisa azul elegante para tu princesa.</h3>
+                    <strong class="price">$31.37</strong>
+                </div>
+            </a>
+            <a class="producto-item jeans" href="camisaazulelegantedeniño.html">
+                <img src="images/OIP (70).webp" alt="">
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Camisa azul de vestir elegante.</h3>
+                    <strong class="price">$32.37</strong>
+                </div>
+            </a>
+            <a class="producto-item blusas" href="pantalonnegroelegantedeniño.html">
+              <img src="images/pantalon-de-traje-negro-joven-nino-tz500_2_zc1.webp" alt="">
+              <div class="texto">
+                  <div class="hidden offer">Oferta</div>
+                  <h3>Pantalón negro elegante </h3>
+                  <strong class="price">$30.98</strong>
+              </div>
+          </a>
+
+
+            <a class="producto-item sueteres" href="pantalonnegrodevestirniña.html">
+                <img src="images/black-girls_-regular-fit-school-trousers__31080.jpg" alt="">
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón negro de vestir. </h3>
+                    <strong class="price">$25.99</strong>
+                </div>
+            </a>
+            <a class="producto-item sueteres" href="pantalonnegrodevestirdeniño.html">
+                <img src="images/OIP (75).webp" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón negro de vestir.</h3>
+                    <strong class="price">$20.50</strong>
+                </div>
+            </a>
+            <a class="producto-item sueteres" href="pantalonazulelegantedeniño.html">
+                <img src="images/OIP (76).webp" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón azul elegante.</h3>
+                    <strong class="price">$20.50</strong>
+                </div>
+            </a>
+            <a class="producto-item sueteres" href="pantalonazulcasualdeniña.html">
+                <img src="images/OIP (77).webp" alt="" >
+                <div class="texto">
+                    <div class="offer">Oferta</div>
+                    <h3>Pantalón azul casual.</h3>
+                    <strong class="price">$21.95</strong>
+                </div>
+            </a>
+            <a class="producto-item sueteres" href="pantalonnegrocasualdeniño.html">
+                <img src="images/pantalon-nino-garcia-jeans-negro-elastico.webp" alt="" >
+                <div class="texto">
+                    <div class="hidden offer">Oferta</div>
+                    <h3>Pantalón negro casual.  </h3>
+                    <strong class="price">$15.99</strong>
+                </div>
+            </a>
+      </section>
+   </main>
+   <!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>ClothesShop</h4>
+                <ul>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Dirección</a></li>
+                </ul>
+
+            </div>
+
+             <div class="footer-links">
+
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Envios</a></li>
+                </ul>
+
+            </div>
+
+             <div class="footer-links">
+
+                <h4>Tienda</h4>
+                <ul>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Comodidad</a></li>
+                    <li><a href="#">Estilos</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Siguenos</h4>
+                <div class="social-link">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   
+</footer>
+    <script src="js/carrito.js"></script>
+    <script src="lib/fontawesome/js/all.min.js"></script>
+</body>
+</html>
+ 

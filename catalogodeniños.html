@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Niños</title>
+    <link rel="stylesheet" href="css/catalogo.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+      <div class="header__superior">
+       <a class="logo" href="index.html">
+        <img src="img/logotipo.svg" alt="Logo">
+      </a>
+        <div class="search">
+            <input type="search" placeholder="¿Que deseas buscar ?">
+        </div>
+      </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="#">Mujer</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="catalogodeniños.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comprayventa.html">Compra y venta</a></li>
+                    <li><a href="#">Promociones y novedades</a></li>
+                    <li><a href="carrito.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+
+
+
+    </header>
+    <main>
+        <div class="catalogo-layout">
+  <div class="color-sidebar">
+    <h3>Filtrar por color:</h3>
+    <div class="color-column">
+      <button class="filter-btn" data-color="all">Todos</button>
+      <button class="filter-btn" data-color="verde">Verde</button>
+      <button class="filter-btn" data-color="azul">Azul</button>
+      <button class="filter-btn" data-color="negro">Negro</button>
+      <button class="filter-btn" data-color="gris">Gris</button>
+      <button class="filter-btn" data-color="beige">Beige</button>
+      <button class="filter-btn" data-color="blanco">Blanco</button>
+      <button class="filter-btn" data-color="celeste">Celeste</button>
+      <button class="filter-btn" data-color="amarillo">Amarillo</button>
+      <button class="filter-btn" data-color="rojo">Rojo</button>
+    </div>
+  </div>
+        <div class="container">
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all" >Todo</button>
+                <button class="filter-btn " data-filter="blusas" >Camisas</button>
+                <button class="filter-btn" data-filter="vestidos" >Conjuntos</button>
+                <button class="filter-btn" data-filter="jeans" >Pantalones</button>
+                <button class="filter-btn" data-filter="sueteres" >Suéteres y Sudaderas</button>
+            </div>
+
+            <div class="producto-grid">
+                <a class="producto-item blusas" data-color="verde" href="camisa01.html">
+                    <img src="images/camisa.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camiseta verde con estampado de Minecraft para niño</h3>
+                        <strong class="price">$14.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="azul" href="camisa02.html">
+                    <img src="images/camisa2.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camiseta azul sólido para niño</h3>
+                        <strong class="price">$9.90</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="negro" href="camisa03.html">
+                    <img src="images/camisa03.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Camiseta deportiva negra con estampado del equipo Inter Miami CF para niño</h3>
+                        <strong class="price">$13.93</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="negro" href="camisa04.html">
+                    <img src="images/camisa04.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Camiseta negra con estampado para niño</h3>
+                        <strong class="price">$9.99</strong>
+                    </div> 
+                </a>
+                <a class="producto-item blusas" data-color="azul" href="camisa05.html">
+                    <img src="images/camisa05.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camiseta azul con estampado Superman para niño</h3>
+                        <strong class="price">$12.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="celeste" href="camisa06.html">
+                    <img src="images/camisa06.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Camiseta celeste con estampado de Spider Man para niño</h3>
+                        <strong class="price">$12.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="gris" href="camisa07.html">
+                    <img src="images/camisa07.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camiseta gris con estampado de avatar para niño</h3>
+                        <strong class="price">$6.99</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="celeste" href="camisa08.html">
+                    <img src="images/camisa08.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Camiseta celeste con estampado de Mickey Mouse para niño</h3>
+                        <strong class="price">$10.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="beige" href="camisa09.html">
+                    <img src="images/camisa9.png" alt="">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camiseta beige con estampado Sonic para niño</h3>
+                        <strong class="price">$12.95</strong>
+                    </div>
+                </a>
+
+
+                <a class="producto-item vestidos" data-color="blanco" href="conjunto01.html">
+                    <img src="images/conjunto01.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas bicolor con estampado de Sonic para niño</h3>
+                        <strong class="price">$23.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="amarillo" href="conjunto02.html">
+                    <img src="images/conjunto02.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas bicolor con estampado de Stitch para niño</h3>
+                        <strong class="price">$23.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="celeste" href="conjunto03.html">
+                    <img src="images/conjunto03.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas bicolor con estampado Bob Esponja para niño</h3>
+                        <strong class="price">$23.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="negro" href="conjunto04.html">
+                    <img src="images/conjunto04.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas bicolor con estampado de Spider-Man para niño</h3>
+                        <strong class="price">$23.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="rojo" href="conjunto05.html">
+                    <img src="images/conjunto05.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas rojas sólido para niño</h3>
+                        <strong class="price">$39.95</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="azul" href="conjunto06.html">
+                    <img src="images/conjunto06.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas azules sólido para niño</h3>
+                        <strong class="price">$39.95</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="blanco" href="conjunto07.html">
+                    <img src="images/conjunto07.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas bicolor con estampado para niño</h3>
+                        <strong class="price">$16.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="verde" href="conjunto08.html">
+                <img src="images/conjunto08.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas bicolor con estampado para niño</h3>
+                        <strong class="price">$16.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="azul" href="conjunto09.html">
+                <img src="images/conjunto09.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Conjunto de 2 piezas bicolor con estampado de moto para niño</h3>
+                        <strong class="price">$25.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="azul" href="jeans01.html">
+                <img src="images/jeans01.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans azul lavado para niño</h3>
+                        <strong class="price">$20.92</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="gris" href="jeans02.html">
+                    <img src="images/jeans02.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans gris lavado para niño</h3>
+                        <strong class="price">$35.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="celeste" href="jeans03.html">
+                    <img src="images/jeans03.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Jeans celeste lavado para niño</h3>
+                        <strong class="price">$35.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="azul" href="jeans04.html">
+                    <img src="images/jeans04.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Jeans azul lavado para niño</h3>
+                        <strong class="price">$19.95</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="negro" href="jeans05.html">
+                    <img src="images/jeans05.png" alt="">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans negro lavado para niño</h3>
+                        <strong class="price">$19.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="beige" href="jeans06.html">
+                    <img src="images/jeans06.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans beige sólido para niño</h3>
+                        <strong class="price">$21.95</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="gris" href="jeans07.html">
+                    <img src="images/jeans07.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans gris lavado para niño</h3>
+                        <strong class="price">$19.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="negro" href="jeans08.html">
+                    <img src="images/jeans08.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Jeans negro sólido para niño</h3>
+                        <strong class="price">$19.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="celeste" href="jeans09.html">
+                    <img src="images/jeans09.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans celeste lavado para niño</h3>
+                        <strong class="price">$26.99</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="negro" href="sueter01.html">
+                    <img src="images/sueter01.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sudadera negra con estampado para niño</h3>
+                        <strong class="price">$29.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="negro" href="sueter02.html">
+                    <img src="images/sueter02.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sueter con gorro y estampado logo para niño</h3>
+                        <strong class="price">$20.93</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="gris" href="sueter03.html">
+                    <img src="images//sueter03.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sudadera gris con estampado para niño</h3>
+                        <strong class="price">$17.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="gris" href="sueter04.html">
+                    <img src="images/sueter04.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter gris con estampado para niño</h3>
+                        <strong class="price">$29.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="negro" href="sueter05.html">
+                    <img src="images/sueter05.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sudadera negra con estampado One Piece para niño</h3>
+                        <strong class="price">$25.95</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="blanco" href="sueter06.html">
+                    <img src="images/sueter06.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sudadera blanca con estampado para niño</h3>
+                        <strong class="price">$25.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="blanco" href="sueter07.html">
+                    <img src="images/sueter07.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter blanco con estampado para niño</h3>
+                        <strong class="price">$11.92</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="azul" href="sueter08.html">
+                    <img src="images/sueter08.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sudadera deportiva Real Madrid para niño</h3>
+                        <strong class="price">$35.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="azul" href="sueter09.html">
+                    <img src="images/sueter09.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sudadera azul con estampado para niño</h3>
+                        <strong class="price">$29.90</strong>
+                   </div>
+                </a>
+            </div>
+        </div>
+    </main>
+   <!-- FOOTER -->
+  <footer>
+  <div class="footer-container">
+    <p>© 2025 clothesshop. Todos los derechos reservados.</p>
+    <br>WhatsApp: +50370515234</br>
+            <br>Email: clothesshop@gmail.com</br>
+            <br>Dirección: 33° AVENIDA NORTE, METROCENTRO 8va ETAPA LOCAL #293</br>
+            SAN SALVADOR
+    <div class="mapa">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.86528088173!2d-89.21819112606728!3d13.692940886690193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330b1eeb9e1a3%3A0x1f1d9b76c9ecf36c!2sSan%20Salvador!5e0!3m2!1ses!2ssv!4v1713211223456"
+        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
+ 

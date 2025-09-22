@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta con detalles compactos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 220px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .card-price {
+      color: #720001;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .card a {
+      display: inline-block;
+      color: #720001;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Detalles compactos */
+    .extra {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 12px;
+      color: #333;
+      text-align: left;
+    }
+
+    .extra:target {
+      display: block;
+    }
+
+    .extra a {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      color: #720001;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tarjeta -->
+  <div class="card">
+    <img src="https://via.placeholder.com/220x160" alt="Camisa elegante">
+    <h2 class="card-title">Camisa Elegante</h2>
+    <p class="card-price">$25.99</p>
+    <a href="#camisa1">Ver detalles</a>
+
+    <!-- Detalles compactos (debajo de la tarjeta) -->
+    <div id="camisa1" class="extra">
+      Tela: 100% algodón<br>
+      Corte slim fit<br>
+      Disponible en tallas S, M, L, XL
+      <a href="#">Ocultar</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/carrito.css">
+  <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="header__superior">
+      <a class="logo" href="index.html">
+        <img src="img/logotipo.svg" alt="Logo">
+      </a>
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+    <div class="container__menu">
+      <div class="menu">
+        <input type="checkbox" id="check__menu">
+        <label id="label__check" for="check__menu">
+          <i class="fa-solid fa-bars icon__menu"></i>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a>
+              <ul>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Niños</a></li>
+              </ul>
+            </li>
+            <li><a href="comprayventa.html">Compra y venta</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= CONTENIDO DE CONTACTO ================= -->
+  <main class="contact-page">
+    <h1>📬 Contáctanos</h1>
+    <div class="contact-form-container">
+      <form id="contactForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h4>ClothesShop</h4>
+          <ul>
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Dirección</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Preguntas</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="#">Envios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Comodidad</a></li>
+            <li><a href="#">Estilos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Síguenos</h4>
+          <div class="social-link">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lib/fontawesome/js/all.min.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+</html>
