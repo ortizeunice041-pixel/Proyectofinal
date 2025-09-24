@@ -5,31 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blusaformal</title>
     <link rel="stylesheet" href="css/blusaformal.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <!--fontawesome link del footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--fontawesome link sobre el carrito-->
 </head>
 <body>
+    <!--Barra de navegación-->
+<header>
+    <div class="header__superior">
+      <a class="logo" href="index.html">
+        <img src="img/logotipo.svg" alt="Logo">
+      </a>
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="proyectofinal - copia/catalogomujer.html">Mujer</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="Proyecto.F/index.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comprayventa.html">Compra y venta</a></li>
+                    <li><a href="#">Promociones y novedades</a></li>
+                    <li><a href="carrito.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+
    <main>
     <div class="container">
         <section class="producto-grid">
             <a class="producto-item blusas" href="blusaformal.html">
                 <img src="images/OIP (1).webp" alt="">
-                <div class="texto">
-                    <h3>Blusa formal manga larga</h3>
-                    <strong class="price">$30.98</strong>
-                </div>
             </a>
         </section>
 
         <div class="product-display">
             <div class="especificaciones">
-                <h2>Blusa casual manga corta performance blanca</h2>
+                <h2>Blusa formal manga larga  blanca</h2>
                 <p class="gris">Vendido y entregado por: <strong>Clothes Shop</strong></p>
                 <br>
                 <h3>Especificaciones:</h3>
                 <ul class="estilo">
                     <li>Estilo de cuello: Asimétrico</li>
-                    <li>Manga: Corta</li>
-                    <li>Diseño: Con textura</li>
-                    <li>Estilo: Casual</li>
+                    <li>Manga: larga</li>
+                    <li>Diseño: liso</li>
+                    <li>Estilo: formal</li>
                 </ul>
                 <div class="delivery">
                     <h3>Métodos de Entrega:</h3>
@@ -44,7 +86,7 @@
                     </div>
                 </div>
                 <div class="sizes">
-                    <span class="price">$29.98</span>
+                    <span class="price">$30.98</span>
                     <p>Talla Damas:</p>
                     <form>
                         <button type="submit" name="size" value="XS">XS</button>
