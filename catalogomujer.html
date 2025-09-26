@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Mujer</title>
+    <link rel="stylesheet" href="css/catalogo.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+</head>
+<body>
+   <header>
+      <div class="header__superior">
+        <div class="logo">
+            <img src="img/logotipo.svg" alt="">
+        </div>
+        <div class="search">
+            <input type="search" placeholder="¿Que deseas buscar ?">
+        </div>
+      </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="catalogomujer.html">Mujer</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="#">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../comprayventa.html">Compra y venta</a></li>
+                    <li><a href="#">Promociones y novedades</a></li>
+                    <li><a href="../carrito.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+
+      
+
+    </header>
+    <main>
+       <div class="catalogo-layout">
+  <div class="color-sidebar">
+    <h3>Filtrar por color:</h3>
+    <div class="color-column">
+      <button class="filter-btn" data-color="all">Todos</button>
+        <button class="filter-btn" data-color="blanco">Blanco</button>
+        <button class="filter-btn" data-color="negro">Negro</button>
+        <button class="filter-btn" data-color="azul">Azul</button>
+        <button class="filter-btn" data-color="rosado">Rosado</button>
+    </div>
+  </div>
+        <div class="container">
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all" >Todo</button>
+                <button class="filter-btn " data-filter="blusas" >Blusas</button>
+                <button class="filter-btn" data-filter="vestidos" >Vestidos</button>
+                <button class="filter-btn" data-filter="jeans" >Pantalones</button>
+                <button class="filter-btn" data-filter="sueteres" >Suéteres y Chaquetas</button>
+            </div>
+            <div class="producto-grid">
+                <a class="producto-item blusas" data-color="blanco" href="producto01blusa.html">
+                    <img src="images/PPW-00101C.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Blusa casual manga corta performance blanca</h3>
+                        <strong class="price">$29.98</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="azul" href="producto02blusa.html">
+                    <img src="images/PDP-00110L.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Blusa casual manga larga performance azul</h3>
+                        <strong class="price">$20.00</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="rosado" href="producto03blusa.html">
+                    <img src="images/PDP-00180C.webp" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Blusa casual manga corta performance rosado</h3>
+                        <strong class="price">$29.98</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="negro" href="producto04blusa.html">
+                    <img src="images/PBQ-39633L.webp" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Blusa de vestir manga larga performance negra</h3>
+                        <strong class="price">$26.95</strong>
+                    </div> 
+                </a>
+                <a class="producto-item blusas" data-color="azul" href="producto05blusa.html">
+                    <img src="images/PBG-9002C.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Blusa sport manga corta azul marino</h3>
+                        <strong class="price">$23.45</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="blanco" href="producto06blusa.html">
+                    <img src="images/PBJ-30701C.webp" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Blusa de vestir estampada manga corta blanca</h3>
+                        <strong class="price">$26.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="rosado" href="producto07blusa.html">
+                    <img src="images/PBL-40601L.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Blusa de vestir manga larga rosada</h3>
+                        <strong class="price">$26.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="negro" href="producto08blusa.html">
+                    <img src="images/PDP-00106C.webp" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Blusa casual manga corta performance negra</h3>
+                        <strong class="price">$29.98</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="azul" href="producto09blusa.html">
+                    <img src="images/PDP-0110C.webp" alt="">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Blusa casual manga corta performance azul</h3>
+                        <strong class="price">$29.98</strong>
+                    </div>
+                </a>
+
+
+                <a class="producto-item vestidos" data-color="negro" href="producto10vestidos.html">
+                    <img src="images/DRO9644_2.webp" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Vestido Clasico, Negro</h3>
+                        <strong class="price">$22.98</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="negro" href="producto11vestidos.html">
+                    <img src="images/DRO9240_2_a3d75365-a40a-4042-a489-29b7e23df1e3.webp" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Vestido sencillo con cadenas, Negro</h3>
+                        <strong class="price">$24.50</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="azul" href="producto12vestidos.html">
+                    <img src="images/DRO3947_2.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Vestido estilo camisa manga larga, Azul</h3>
+                        <strong class="price">$29.98</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="blanco" href="producto13vestidos.html">
+                    <img src="images/DRO0498.webp" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Vestido tipo short, Blanco</h3>
+                        <strong class="price">$25.50</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="negro" href="producto14vestidos.html">
+                    <img src="images/DRO0472.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Vestido pegado, Negro</h3>
+                        <strong class="price">$19.50</strong>
+                    </div>
+                </a>
+
+
+                <a class="producto-item jeans" data-color="blanco" href="producto15jeans.html">
+                <img src="images/PTG-481C2.webp" alt="" height="77%">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans twill tipo tiro alto blanco</h3>
+                        <strong class="price">$36.37</strong>
+                    </div> 
+                </a>
+                <a class="producto-item jeans" data-color="rosado" href="producto16jeans.html">
+                    <img src="images/PTG-481C1.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans twill tipo tiro alto rosado</h3>
+                        <strong class="price">$36.37</strong>
+                    </div>
+                </a>
+                <a class="producto-item jeans" data-color="azul" href="producto17jeans.html">
+                <img src="images/PJG-471B7.webp" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Jeans tipo campana tiro alto azul</h3>
+                        <strong class="price">$36.37</strong>
+                    </div>
+                </a>
+                <a class="producto-item jeans" data-color="negro" href="producto18jeans.html">
+                <img src="images/PJG-461T43.webp" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Jeans tiro alto con un botón estilo recto 461 negro</h3>
+                        <strong class="price">$30.66</strong>
+                    </div>
+                </a>
+                <a class="producto-item jeans" data-color="negro" href="producto19jeans.html">
+                <img src="images/PJG-461SB33.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans tiro alto con un botón estilo recto negro</h3>
+                        <strong class="price">29.50</strong>
+                    </div>
+                </a>
+                <a class="producto-item jeans" data-color="azul" href="producto20jeans.html">
+                    <img src="images/PJG-461SB13.webp" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans tiro alto con un botón estilo recto 461 azul oscuro</h3>
+                        <strong class="price">$36.37</strong>
+                    </div>
+                </a>
+                <a class="producto-item jeans" data-color="azul" href="producto21jeans.html">
+                    <img src="images/PJG-461S41.webp" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Jeans alto con un botón estilo recto 461 azul claro</h3>
+                        <strong class="price">$36.37</strong>
+                    </div>
+                </a>
+                <a class="producto-item jeans" data-color="negro" href="producto22jeans.html">
+                    <img src="images/PJG-451T33.webp" alt="" height="79%">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans skinny tiro alto 451 negro básico</h3>
+                        <strong class="price">$36.37</strong>
+                    </div>
+                </a>
+
+
+                <a class="producto-item sueteres" data-color="azul" href="producto23sueteres.html">
+                    <img src="images/p.jpg" alt="">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Chaleco Brooks azul oscuro</h3>
+                        <strong class="price">$23.99</strong>
+                    </div>
+                </a>
+                <a class="producto-item sueteres" data-color="negro" href="producto24sueteres.html">
+                    <img src="images/u.jpg" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Chaleco de rayas Negro</h3>
+                        <strong class="price">$18.50</strong>
+                    </div>
+                </a>
+                <a class="producto-item sueteres" data-color="negro" href="producto25sueteres.html">
+                    <img src="images/a.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Blazer Negro basico</h3>
+                        <strong class="price">$17.50</strong>
+                    </div>
+                </a>
+                <a class="producto-item sueteres" data-color="negro" href="producto26sueteres.html">
+                    <img src="images/i.jpg" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Sueter de puntos sfera Negro</h3>
+                        <strong class="price">$21.95</strong>
+                    </div>
+                </a>
+                <a class="producto-item sueteres" data-color="rosado" href="producto27sueteres.html">
+                    <img src="images/o.jpg" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Blazer Rayado Rosado  </h3>
+                        <strong class="price">$15.99</strong>
+                    </div>
+                </a>
+                <a class="producto-item sueteres" data-color="azul" href="producto28sueteres.html">
+                    <img src="images/e.jpg" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Chaqueta Cargo Azul</h3>
+                        <strong class="price">$22.90</strong>
+                   </div>
+                </a>
+            </div>
+        </div>
+    </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>ClothesShop</h4>
+                <ul>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Dirección</a></li>
+                </ul>
+
+            </div>
+
+             <div class="footer-links">
+
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Envios</a></li>
+                </ul>
+
+            </div>
+
+             <div class="footer-links">
+
+                <h4>Tienda</h4>
+                <ul>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Comodidad</a></li>
+                    <li><a href="#">Estilos</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Siguenos</h4>
+                <div class="social-link">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   
+</footer>
+    <script src="lib/fontawesome/js/all.min.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
+ 
