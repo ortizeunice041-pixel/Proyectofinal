@@ -7,7 +7,47 @@
     <link rel="stylesheet" href="css/12camisaazul.css">
 </head>
 <body>
+<header>
+    <div class="header__superior">
+      <a class="logo" href="index.html">
+        <img src="img/logotipo.svg" alt="Logo">
+      </a>
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="proyectofinal - copia/catalogomujer.html">Mujer</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="Proyecto.F/index.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comprayventa.html">Compra y venta</a></li>
+                    <li><a href="#">Promociones y novedades</a></li>
+                    <li><a href="carrito.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+</header>
     <main>
+        <button id="boton-regresar">Regresar</button>
     <div class="container">
         <section class="producto-grid">
              <a class="producto-item damas" href="12camisaazul.html">
@@ -71,5 +111,45 @@
     <p>El corte de la prenda es ajustado y se adapta a la silueta del cuerpo, lo que sugiere que está confeccionada con un tejido elástico o de alta calidad que no se arruga fácilmente. El estilo general de esta camisa es casual inteligente, fusionando la comodidad de un polo con la sofisticación de un diseño más moderno. Es ideal para un atuendo de fin de semana, una salida nocturna o un encuentro informal que requiera un look cuidado y a la moda.</p>
   </div>
 </div>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>ClothesShop</h4>
+                    <ul>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Dirección</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Comodidad</a></li>
+                        <li><a href="#">Estilos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/fontawesome/js/all.min.js"></script>
+    <script src="js/12camisaverde.js"></script>
 </body>
 </html>
