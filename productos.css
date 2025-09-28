@@ -43,21 +43,41 @@ header{
     padding: 10px;
 }
 
-.regreso {
-    padding: 20px;
-}
+.regresar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
 
-#boton-regresar {
-    background-color: #8b0000; /* El color de fondo del botón */
-    color: white; /* Color del texto */
-    padding: 10px 20px;
-    border: 2px solid #4d0000; /* Este es el borde que queremos cambiar */
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* La sombra que le da profundidad */
-    /* Otras propiedades de estilo */
-}
+    /* Botón Regresar */
+    .regresar-btn {
+      background-color:#8b0000;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+    }
+
+.regresar-btn:hover {
+      background-color: #4d0000;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .regresar-btn {
+        width: 100%;
+        font-size: 1.1rem;
+      }
+
+      .regresar-container {
+        padding: 1rem;
+      }
+    }
 
 
 /*barra menu*/
@@ -91,7 +111,7 @@ nav  ul  li{
 }
 
 nav > ul > li:first-child > a{
-   background-image: url(../img/home.png);
+   background-image: url(../images/home.svg);
    background-size: 24px;
    background-repeat: no-repeat;
    background-position:center center ;
@@ -99,7 +119,7 @@ nav > ul > li:first-child > a{
 }
 
 nav > ul > li:first-child:hover > a{
-   background-image: url(../img/home.png);
+   background-image: url(../images/home.svg);
    background-size: 24px;
    background-repeat: no-repeat;
    background-position:center center ;
@@ -207,66 +227,76 @@ nav ul li ul li a:hover{
 @media screen and (max-width: 730px){
 
     .search input{
-        display: none;
+      display: none;
     }
 
     .header__superior{
-        padding: 10px;
+    padding: 10px;
     }
 
     .logo img{
-        width: 120px;
+     width: 120px;
 
     }
-
-    nav > ul {
+    /* Estilos para el menú desplegable en móvil */
+     nav > ul {
         flex-direction: column;
         background-color: #af312a;
         position: fixed;
         left: 0;
-        top: 200px;
+        top: 210px; /* 👈 CORREGIDO: Asegura que el menú baje después del header */
         width: 100%;
         height: 0px;
-        transition: all 300ms ease;
+       transition: all 300ms ease;
         z-index: 100;
-        opacity: 0;
-        visibility: hidden;
+         opacity: 0;
+          visibility: hidden;
+     }
+
+     nav > ul > li > a:hover{
+      transform: scale(1);
     }
 
-    nav > ul > li > a:hover{
-        transform: scale(1);
+     nav ul li ul{
+     left: 90px;
     }
 
-    nav ul li ul{
-        left: 90px;
+     nav > ul > li:hover ul{
+       top: 50px;
     }
 
-    nav > ul > li:hover ul{
-        top: 50px;
-    }
+     nav > ul >li:first-child a{
 
-    nav > ul >li:first-child a{
-
-        background-position: 20px;
+       background-position: 20px;
     }
 
     #selected{
-        transform: scale(1);
+     transform: scale(1);
     }
-
-    #label__check{
-        display: block;
-    }
-
-    .icon__menu{
+    
+    /* 👈 MODIFICADO: Contenedor para alinear el ícono */
+     #label__check{
         display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: flex-start; /* 👈 CAMBIO: Alinear a la izquierda */
+        padding-left: 20px; /* 👈 CAMBIO: Espacio para separarlo del borde izquierdo */
+        padding-right: 0; /* Asegura que no tenga padding derecho */
+        height: 70px; 
+        width: 100%;
+    }
+    
+    /* 👈 MODIFICADO: Estilo del ícono (la imagen) */
+    .icon__menu{
+        display: block; /* La imagen debe ser un bloque */
+       height: auto; /* Mantener la proporción de la imagen */
+       width: 28px; /* Asegura un buen tamaño */
     }
 
-    #check__menu:checked ~ nav > ul{
+     #check__menu:checked ~ nav > ul{
         height: 300px;
         visibility: visible;
         opacity: 1;
-        
+ 
     }
 
 }
@@ -495,4 +525,4 @@ body{
         width: 100%;
         margin-bottom: 30px;
     }
-}
+} 
