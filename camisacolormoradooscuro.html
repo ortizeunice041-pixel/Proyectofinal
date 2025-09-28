@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/camisacolormoradooscuro.css">
+    <link rel="stylesheet" href="css/productos.css">
 </head>
 <body>
     <header>
     <div class="header__superior">
       <a class="logo" href="index.html">
-        <img src="img/logotipo.svg" alt="Logo">
+        <img src="images/logotipo.svg" alt="Logo">
       </a>
       <div class="search">
         <input type="search" placeholder="¿Qué deseas buscar?">
@@ -26,7 +26,7 @@
         <div class="menu">
             <input type="checkbox" id="check__menu">
             <label id="label__check" for="check__menu">
-                <i class="fa-solid fa-bars icon__menu"></i>
+                <img  src="images/path2.png" class="icon__menu"></img>
             </label>
             <nav>
                 <ul>
@@ -47,15 +47,13 @@
       </div>
     </header>
      <main>
-        <button id="boton-regresar">Regresar</button>
+         <div class="regresar-container">
+            <button class="regresar-btn" onclick="goBack()">⟵ Regresar</button>
+        </div>
     <div class="container">
-        <section class="producto-grid">
-            <a class="producto-item vestidos" href="camisacolormoradooscuro.html">
+            <a class="imagen" href="camisacolormoradooscuro.html">
                 <img src="images/OIP (65).webp" alt="" >
             </a>
-        </section>
-
-        <div class="product-display">
             <div class="especificaciones">
                 <h2>Camisa color morado oscuro formal</h2>
                 <p class="gris">Vendido y entregado por: <strong>Clothes Shop</strong></p>
@@ -92,11 +90,6 @@
                 </div>
                 <button type="submit" class="carrito">Agregar al carrito</button>
             </div>
-        </div>
-    </div>
-</main>
-          <div class="cuadro">
-  
   <div class="body">
     <h3>Descripción:</h3>
     <p>Destaca con un estilo audaz y moderno con esta camisa 
@@ -117,8 +110,9 @@
     <p>Los detalles son clave en esta camisa. El cuello de solapa tiene un forro interior en un color más claro, posiblemente gris o blanco, que se puede ver si se lleva desabotonado o con las puntas hacia arriba. Este detalle contrasta con el color principal de la camisa, dándole un toque moderno y personal. En la parte izquierda del pecho, tiene un bolsillo de parche que añade funcionalidad. Los botones son negros, lo que crea un contraste visual sutil pero elegante con el borgoña de la tela. El modelo la combina perfectamente con un pantalón de vestir negro y un cinturón a juego, mostrando cómo esta camisa puede elevar un look formal.</p>
         
   </div>
-</div>
-    </main>
+ </div>
+    </div>
+</main>
      <footer class="footer">
         <div class="container">
             <div class="footer-row">
@@ -158,6 +152,6 @@
         </div>
     </footer>
     <script src="lib/fontawesome/js/all.min.js"></script>
-    <script src="js/camisacolormorado.js"></script>
+    <script src="js/productos.js"></script>
 </body>
 </html>

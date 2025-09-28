@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
-  <link rel="stylesheet" href="css/carrito.css">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="css/contacto.css">
   <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
   <header>
     <div class="header__superior">
       <a class="logo" href="index.html">
-        <img src="img/logotipo.svg" alt="Logo">
+        <img src="img/logo del sitio.svg" alt="Logo">
       </a>
       <div class="search">
         <input type="search" placeholder="¿Qué deseas buscar?">
@@ -33,15 +33,15 @@
         <nav>
           <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a>
+            <li><a href="#">Catálogo</a>
               <ul>
-                <li><a href="proyectofinal/catalogomujer.html">Mujer</a></li>
+                <li><a href="catalogomujer.html">Mujer</a></li>
                 <li><a href="#">Hombre</a></li>
                 <li><a href="#">Niños</a></li>
               </ul>
             </li>
             <li><a href="comprayventa.html">Compra y venta</a></li>
-            <li><a href="#">Promociones</a></li>
+            <li><a href="carrito.html">Promociones</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
@@ -49,26 +49,16 @@
     </div>
   </header>
 
-  <!-- ================= CONTENIDO DE CONTACTO ================= -->
-  <main class="contact-page">
-    <h1>📬 Contáctanos</h1>
-    <div class="contact-form-container">
-      <form id="contactForm">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-
-        <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" placeholder="Tu correo" required>
-
-        <label for="subject">Asunto:</label>
-        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
-
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-        <p id="formMessage" class="form-message"></p>
-      </form>
+  <!-- ================= CONTENIDO DEL CARRITO ================= -->
+  <main class="carrito-page">
+    <h1>🛒 Tu Carrito</h1>
+    <div class="carrito-container" id="carritoContainer">
+      <p>El carrito está vacío.</p>
+    </div>
+    <div class="carrito-total">
+      <strong>Total: $<span id="cartTotal">0.00</span></strong>
+      <button id="vaciarCarrito">Vaciar Carrito</button>
+      <button id="checkout">Finalizar Compra</button>
     </div>
   </main>
 
@@ -114,6 +104,7 @@
       </div>
     </div>
   </footer>
+
   <script src="lib/fontawesome/js/all.min.js"></script>
   <script src="js/carrito.js"></script>
 </body>

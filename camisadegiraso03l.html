@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/productos.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <!--fontawesome link del footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <header>
+    <div class="header__superior">
+      <a class="logo" href="index.html">
+        <img src="images/logotipo.svg" alt="Logo">
+      </a>
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <img  src="images/path2.png" class="icon__menu"></img>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="proyectofinal - copia/catalogomujer.html">Mujer</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="Proyecto.F/index.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comprayventa.html">Compra y venta</a></li>
+                    <li><a href="#">Promociones y novedades</a></li>
+                    <li><a href="carrito.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="regresar-container">
+            <button class="regresar-btn" onclick="goBack()">⟵ Regresar</button>
+        </div>
+    <div class="container">
+              <a class="imagen" href="3camisadegirasol.html">
+                <img src="images/girasol.webp" alt="" >
+            </a>
+            <div class="especificaciones">
+                <h2>Camisa fresca de girasol. </h2>
+                <p class="gris">Vendido y entregado por: <strong>Clothes Shop</strong></p>
+                <br>
+                <h3>Especificaciones:</h3>
+                <ul class="estilo">
+                    <li>Estilo de cuello: Asimétrico</li>
+                    <li>Manga: larga</li>
+                    <li>Diseño: Con una imagen alusiva al girasol</li>
+                    <li>Estilo: Casual</li>
+                </ul>
+                <div class="delivery">
+                    <h3>Métodos de Entrega:</h3>
+                    <div class="metodos">
+                        <img class="icon" src="" alt="">
+                        <p>Envío a domicilio: Desde $9.99, entrega en hasta 3 días hábiles.</p>
+                    </div>
+                    <div class="metodos">
+                        <img class="icon" src="" alt="">
+                        <p>Gratis, entrega en hasta 3 días hábiles.</p>
+                        <p>Recuerda, tendrás 30 días para recoger tu pedido; caso contrario, se cancelará la compra y procederemos con el reembolso.</p>
+                    </div>
+                </div>
+                <div class="sizes">
+                    <span class="price">$43.99</span>
+                    <p>Talla Damas:</p>
+                    <form>
+                        <button type="submit" name="size" value="XS">XS</button>
+                        <button type="submit" name="size" value="S">S</button>
+                        <button type="submit" name="size" value="M">M</button>
+                        <button type="submit" name="size" value="L">L</button>
+                        <button type="submit" name="size" value="XL">XL</button>
+                    </form>
+                </div>
+                <button type="submit" class="carrito">Agregar al carrito</button>
+            </div>
+  <div class="body">
+    <h3>Descripción:</h3>
+    <p>Un Rayo de Sol en Tu Guardarropa: Camisa de Girasoles
+      Ilumina cada día con nuestra blusa de manga tres cuartos, adornada con un vibrante estampado 
+      de girasoles. Esta prenda es la combinación perfecta de comodidad y estilo, ideal para la mujer 
+      que busca un look alegre y desenfadado sin sacrificar la elegancia.</p>
+
+    <p>Diseño y Comodidad en Armonía
+       Confeccionada con una tela ligera y suave, esta blusa te ofrece una sensación de frescura y 
+       ligereza. Su corte holgado y relajado te brinda libertad de movimiento, mientras que el cuello 
+       redondo y las mangas tres cuartos la hacen perfecta para usarla en cualquier temporada. El diseño
+        de girasoles en blanco y negro contrasta de forma espectacular sobre el fondo amarillo, creando 
+        un estilo único y llamativo.</p>
+
+    <p>Perfecta para Cualquier Ocasión
+       Esta blusa es tan versátil como hermosa. Puedes combinarla con tus jeans favoritos para un 
+       look casual y alegre, o usarla con pantalones blancos o de lino para un estilo más fresco y
+        veraniego. Es la prenda perfecta para salir a pasear, un brunch con amigas o simplemente para
+         añadir un toque de color y felicidad a tu día.</p>
+  </div>
+ </div>
+    </div>
+</main>
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>ClothesShop</h4>
+                    <ul>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Dirección</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Comodidad</a></li>
+                        <li><a href="#">Estilos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/productos.js"></script>
+ <script src="lib/fontawesome/js/all.min.js"></script>
+</body>
+</html>

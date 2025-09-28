@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blusa formal rayada</title>
-    <link rel="stylesheet" href="css/blusarayadaformal.css">
+    <link rel="stylesheet" href="css/productos.css">
 </head>
 <body>
     <header>
     <div class="header__superior">
       <a class="logo" href="index.html">
-        <img src="img/logotipo.svg" alt="Logo">
+        <img src="images/logotipo.svg" alt="Logo">
       </a>
       <div class="search">
         <input type="search" placeholder="¿Qué deseas buscar?">
@@ -26,7 +26,7 @@
         <div class="menu">
             <input type="checkbox" id="check__menu">
             <label id="label__check" for="check__menu">
-                <i class="fa-solid fa-bars icon__menu"></i>
+                <img  src="images/path2.png" class="icon__menu"></img>
             </label>
             <nav>
                 <ul>
@@ -47,18 +47,16 @@
       </div>
     </header>
       <main>
-        <button id="boton-regresar">Regresar</button>
+         <div class="regresar-container">
+            <button class="regresar-btn" onclick="goBack()">⟵ Regresar</button>
+        </div>
     <div class="container">
-        <section class="producto-grid">
-             <a class="producto-item blusas" href="blusarayadaformal.html">
+             <a class="imagen" href="blusarayadaformal.html">
                 <img src="images/OIP (12).webp"alt="" >
                 <div class="texto">
                     <div class="hidden offer"></div>
                 </div>
             </a>
-        </section>
-
-        <div class="product-display">
             <div class="especificaciones">
                 <h2>Blusa rallada formal</h2>
                 <p class="gris">Vendido y entregado por: <strong>Clothes Shop</strong></p>
@@ -95,11 +93,6 @@
                 </div>
                 <button type="submit" class="carrito">Agregar al carrito</button>
             </div>
-        </div>
-    </div>
-</main>
-  
-  <div class="cuadro">
     <div class="body">
     <h3>Descripción:</h3>
         <p>¡Esta camisa es la pieza que estabas buscando para elevar tu estilo de oficina o
@@ -128,7 +121,10 @@
              Su diseño elegante y su corte favorecedor la convierten en una pieza fundamental para 
              cualquier guardarropa profesional.</p>
       </div>
-  </div>
+</div>
+    </div>
+</main>
+  
   <footer class="footer">
         <div class="container">
             <div class="footer-row">
@@ -168,6 +164,6 @@
         </div>
     </footer>
     <script src="lib/fontawesome/js/all.min.js"></script>
-    <script src="js/blusarayadaformal.js"></script>
+    <script src="js/productos.js"></script>
 </body>
 </html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+    <header>
+    <div class="header__superior">
+      <a class="logo" href="index.html">
+        <img src="images/logotipo.svg" alt="Logo">
+      </a>
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <img  src="images/path2.png" class="icon__menu"></img>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="proyectofinal - copia/catalogomujer.html">Mujer</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="Proyecto.F/index.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comprayventa.html">Compra y venta</a></li>
+                    <li><a href="#">Promociones y novedades</a></li>
+                    <li><a href="carrito.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+</header>
+    <main>
+        <div class="regresar-container">
+            <button class="regresar-btn" onclick="goBack()">⟵ Regresar</button>
+        </div>
+    <div class="container">
+             <a class="imagen" href="13pantalonazulcasual.html">
+                <img src="images/R (7).jpg" alt="" >
+                <div class="texto">
+                </div>
+            </a>
+            <div class="especificaciones">
+                <h2>Pantalón azul casual.</h2>
+                <p class="gris">Vendido y entregado por: <strong>Clothes Shop</strong></p>
+                <br>
+                <h3>Especificaciones:</h3>
+                <ul class="estilo">
+                    <li>Estilo de cuello: Asimétrico</li>
+                    <li>Diseño: liso</li>
+                    <li>Estilo: Casual</li>
+                </ul>
+                <div class="delivery">
+                    <h3>Métodos de Entrega:</h3>
+                    <div class="metodos">
+                        <img class="icon" src="" alt="">
+                        <p>Envío a domicilio: Desde $9.99, entrega en hasta 3 días hábiles.</p>
+                    </div>
+                    <div class="metodos">
+                        <img class="icon" src="" alt="">
+                        <p>Gratis, entrega en hasta 3 días hábiles.</p>
+                        <p>Recuerda, tendrás 30 días para recoger tu pedido; caso contrario, se cancelará la compra y procederemos con el reembolso.</p>
+                    </div>
+                </div>
+                <div class="sizes">
+                    <span class="price">$34.99</span>
+                    <p>Talla caballero:</p>
+                    <form>
+                        <button type="submit" name="size" value="XS">XS</button>
+                        <button type="submit" name="size" value="S">S</button>
+                        <button type="submit" name="size" value="M">M</button>
+                        <button type="submit" name="size" value="L">L</button>
+                        <button type="submit" name="size" value="XL">XL</button>
+                    </form>
+                </div>
+                <button type="submit" class="carrito">Agregar al carrito</button>
+            </div>
+  <div class="body">
+    <h3>Descripción:</h3>
+    <p>Estos pantalones son unos **jeans de mezclilla** diseñados para hombre, que destacan por su 
+        estilo moderno y su versatilidad. El color es un **azul medio**, conocido como azul índigo,
+         que presenta un acabado de lavado para dar la impresión de un uso natural y cómodo. Este 
+         efecto desgastado es más notable en los muslos, donde el color es más claro, y en las costuras,
+          lo que le da un toque casual y a la moda.</p>
+
+    <p>El corte de los jeans es **ajustado** o **slim fit**, lo que significa que se ciñe al 
+        cuerpo sin ser excesivamente apretado. La tela sigue la línea natural de las piernas desde 
+        la cadera hasta los tobillos, creando una silueta limpia y estilizada. Este tipo de corte 
+        es muy popular, ya que ofrece un equilibrio perfecto entre comodidad y estilo.</p>
+
+    <p>En la cintura, el pantalón tiene las trabillas tradicionales para llevar un cinturón.
+         Se puede apreciar la presencia de un cinturón marrón, lo que sugiere un atuendo pulido.
+          En la parte frontal, los bolsillos tienen una forma clásica de jeans, con las costuras 
+          en un hilo de color más claro (posiblemente amarillo o beige) que resalta sobre el azul 
+          de la tela. </p>
+
+    <p>La parte inferior del pantalón se ve ligeramente doblada o "apilada" sobre las zapatillas, 
+        un detalle que es común en el estilo urbano contemporáneo. Se combinan con unas zapatillas 
+        deportivas blancas con franjas negras, lo que refuerza el look casual y desenfadado.</p>
+
+  </div>
+ </div>
+    </div>
+</main>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>ClothesShop</h4>
+                    <ul>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Dirección</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Comodidad</a></li>
+                        <li><a href="#">Estilos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/fontawesome/js/all.min.js"></script>
+    <script src="js/productos.js"></script>
+</body>
+</html>
+
+
+
+
