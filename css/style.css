@@ -22,10 +22,12 @@ main {
     margin-top: 240px; /* Ajusta este valor según la altura de tu header */
 }
 
-main img{
-    width: 1300px; /* Limita el ancho para que no se extienda demasiado en pantallas grandes */
+main img {
+    width: 1300px;
+    max-width: 100%; /* Esta línea asegura que la imagen no exceda el ancho de su contenedor */
+    height: auto; /* Esta línea mantiene la proporción original de la imagen */
     display: block;
-    margin: 0 auto 50px auto; /* Centra la imagen y le da espacio en la parte inferior */
+    margin: 0 auto 50px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -49,23 +51,6 @@ main img{
 .search input{
     width: 300px;
     padding: 10px;
-}
-
-.cart-icon {
-  position: relative;
-  cursor: pointer;
-  font-size: 1.5em;
-}
-
-.cart-icon span {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background: red;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 0.8em;
-  padding: 2px 6px;
 }
 
 /*barra menu*/
@@ -99,7 +84,7 @@ nav  ul  li{
 }
 
 nav > ul > li:first-child > a{
-   background-image: url(../img/home.png);
+   background-image: url(../images/home.svg);
    background-size: 24px;
    background-repeat: no-repeat;
    background-position:center center ;
@@ -107,7 +92,7 @@ nav > ul > li:first-child > a{
 }
 
 nav > ul > li:first-child:hover > a{
-   background-image: url(../img/home.png);
+   background-image: url(../images/home.svg);
    background-size: 24px;
    background-repeat: no-repeat;
    background-position:center center ;
@@ -212,89 +197,94 @@ nav ul li ul li a:hover{
 #check__menu{
     display: none;
 }
+/* ... código CSS anterior ... */
+
 @media screen and (max-width: 730px){
 
     .search input{
-        display: none;
+      display: none;
     }
 
     .header__superior{
-        padding: 10px;
+    padding: 10px;
     }
 
     .logo img{
-        width: 120px;
+     width: 120px;
 
     }
-
-    nav > ul {
+    /* Estilos para el menú desplegable en móvil */
+     nav > ul {
         flex-direction: column;
         background-color: #af312a;
         position: fixed;
         left: 0;
-        top: 200px;
+        top: 210px; /* 👈 CORREGIDO: Asegura que el menú baje después del header */
         width: 100%;
         height: 0px;
-        transition: all 300ms ease;
+       transition: all 300ms ease;
         z-index: 100;
-        opacity: 0;
-        visibility: hidden;
+         opacity: 0;
+          visibility: hidden;
+     }
+
+     nav > ul > li > a:hover{
+      transform: scale(1);
     }
 
-    nav > ul > li > a:hover{
-        transform: scale(1);
+     nav ul li ul{
+     left: 90px;
     }
 
-    nav ul li ul{
-        left: 90px;
+     nav > ul > li:hover ul{
+       top: 50px;
     }
 
-    nav > ul > li:hover ul{
-        top: 50px;
-    }
+     nav > ul >li:first-child a{
 
-    nav > ul >li:first-child a{
-
-        background-position: 20px;
+       background-position: 20px;
     }
 
     #selected{
-        transform: scale(1);
+     transform: scale(1);
     }
-
-    #label__check{
-        display: block;
-    }
-
-    .icon__menu{
+    
+    /* 👈 MODIFICADO: Contenedor para alinear el ícono */
+     #label__check{
         display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: flex-start; /* 👈 CAMBIO: Alinear a la izquierda */
+        padding-left: 20px; /* 👈 CAMBIO: Espacio para separarlo del borde izquierdo */
+        padding-right: 0; /* Asegura que no tenga padding derecho */
+        height: 70px; 
+        width: 100%;
+    }
+    
+    /* 👈 MODIFICADO: Estilo del ícono (la imagen) */
+    .icon__menu{
+        display: block; /* La imagen debe ser un bloque */
+       height: auto; /* Mantener la proporción de la imagen */
+       width: 28px; /* Asegura un buen tamaño */
     }
 
-    #check__menu:checked ~ nav > ul{
+     #check__menu:checked ~ nav > ul{
         height: 300px;
         visibility: visible;
         opacity: 1;
-        
+ 
     }
 
 }
 
-@media (max-width: 950px) {
-    .producto-grid {
-        padding:30px;
-        position: relative;
-        overflow: hidden;
-        display: grid;
-        gap: 25px;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) !important;
-        width: 150%;
-    }
-}
+
 
 body {
-    background: #f7d7d0ff;
+    background: #f7d7d0ff; /* Mantiene el color rosa de fondo */
     margin: 0;             /* Elimina el margen por defecto */
-    padding: 0; 
+    padding: 0;  
+}
+main {
+    padding: 40px 20px; /* Aplica el espacio solo a las tarjetas, no al footer */
 }
 
 .container {
@@ -302,9 +292,6 @@ body {
     margin: 0 auto;
     text-align: center;
     
-}
-main {
-    padding: 40px 20px; /* Aplica el espacio solo a las tarjetas, no al footer */
 }
 
 .filter-buttons {
@@ -386,8 +373,6 @@ a {
     text-decoration: none;
 }
 
-
-/* FOOTER */
 /* FOOTER */
 *{
     margin: 0;

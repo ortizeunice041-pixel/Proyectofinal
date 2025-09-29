@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -5,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     text-decoration: none;
 }
 
@@ -17,17 +18,9 @@ header{
     background: #720001ff;
     z-index: 1000;  
 }
-main {
-    margin-top: 240px; /* Ajusta este valor según la altura de tu header */
-}
 
-main img{
-    width: 1300px; /* Limita el ancho para que no se extienda demasiado en pantallas grandes */
-    display: block;
-    margin: 0 auto 50px auto; /* Centra la imagen y le da espacio en la parte inferior */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
+
+
 /*Header superior*/
 
 
@@ -50,22 +43,42 @@ main img{
     padding: 10px;
 }
 
-.cart-icon {
-  position: relative;
-  cursor: pointer;
-  font-size: 1.5em;
-}
+.regresar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
 
-.cart-icon span {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background: red;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 0.8em;
-  padding: 2px 6px;
-}
+    /* Botón Regresar */
+    .regresar-btn {
+      background-color:#8b0000;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+    }
+
+.regresar-btn:hover {
+      background-color: #4d0000;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .regresar-btn {
+        width: 100%;
+        font-size: 1.1rem;
+      }
+
+      .regresar-container {
+        padding: 1rem;
+      }
+    }
+
 
 /*barra menu*/
 
@@ -288,102 +301,145 @@ nav ul li ul li a:hover{
 
 }
 
-
-
 body {
-    background: #f7d7d0ff; /* Mantiene el color rosa de fondo */
-    margin: 0;             /* Elimina el margen por defecto */
-    padding: 0;  
-}
-main {
-    padding: 40px 20px; /* Aplica el espacio solo a las tarjetas, no al footer */
+    background: #f7d7d0ff;
 }
 
+main {
+    margin-top: 220px; /* Ajusta este valor según la altura de tu header */
+}
+
+.gris {
+  color: #5c5a5a;
+}
+strong {
+  color: #700000ff;
+}
 .container {
-    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 940px;
     margin: 0 auto;
-    text-align: center;
     
 }
 
-.filter-buttons {
-    margin: 30px;
+img {
+    width: 550px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.filter-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    padding: 12px 24px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 20px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+.especificaciones {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
 }
-
-.btn:hover {
-    color: white;
-    background: #d6736dff;
-}
-
-.active {
-    background: #af312aff;
-}
-
-
-.producto-grid {
-    padding:30px;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
-
-}
-
-.producto-item img {
-    width: 100%;
-    border-radius: 30px;
-    transition: transform 0.5s ease;
-}
-
-.texto {
+.estilo {
     padding: 15px;
-    z-index: 1;
-    position: relative;
+    margin-bottom: 20px;
 }
 
-.producto-item:hover img {
-    transform: translateY(-15px);
-}
-
-.hidden {
-    display: none;
-}
-
-.producto-item h3 {
-    font-size: 14px;
-    font-weight: normal;
+.metodos {
+    border: 2px solid #ccc;
+    border-radius: 7px;
     margin: 5px;
-    color: black;
-}
-.producto-item .offer {
-    color: red;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.producto-item .offer.hidden {
-    visibility: hidden;
-}
-.producto-item .price {
-    font-size: 18px;
-    color: black;
+    background: white;
 }
 
-a {
-    text-decoration: none;
+p {
+  margin: 5px;
 }
+.delivery .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.price {
+  font-size: 1.8em;
+  color: #af312aff;
+  padding: 5px;
+}
+
+.sizes button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.sizes button:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+.carrito {
+    background-color: #af312aff;
+    color: white;
+    padding: 10px 150px;
+    border: none;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.carrito:hover {
+    background-color: rgb(143, 26, 20);
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sizes button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .carrito button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+}
+
+.body {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+.body h3 {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.body h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #888;
+}
+
+.body p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+
 
 /* FOOTER */
 *{
@@ -414,7 +470,7 @@ body{
 
 .footer-links{
     width: 25%;
-    padding: 0 15px;
+    padding: 0 90px;
 }
 
 .footer-links h4{
@@ -469,31 +525,4 @@ body{
         width: 100%;
         margin-bottom: 30px;
     }
-}
-
-/* ===============================
-   CARRITO PÁGINA
-================================== */
-
-.cart-icon {
-  color: #fff;
-  display: flex; /* Permite alinear el ícono y el número */
-  align-items: center; /* Centra los elementos verticalmente */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  gap: 5px; /* Crea un pequeño espacio entre el ícono del carrito y el número */
-}
-
-/* Estilo para el número (el 0) dentro del círculo */
-#cart-count {
-  position: relative; /* Lo posiciona en relación a su contenedor, .cart-icon */
-  top: -10px; /* Mueve el número hacia arriba para que quede sobre el ícono */
-  right: 5px; /* Mueve el número a la derecha */
-  background-color: red; /* Color de fondo del círculo */
-  color: white; /* Color del texto */
-  font-size: 12px; /* Tamaño del número */
-  padding: 3px 6px; /* Espaciado dentro del círculo */
-  border-radius: 50%; /* Hace que la forma sea un círculo */
-}
-
-#vaciarCarrito { background: #e74c3c; color: #fff; }
-#checkout { background: #2ecc71; color: #fff; }
+} 
