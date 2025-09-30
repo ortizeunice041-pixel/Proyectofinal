@@ -279,7 +279,7 @@ nav ul li ul li a:hover{
         display: flex;
         align-items: center; /* Centra verticalmente */
         justify-content: flex-start; /* 👈 CAMBIO: Alinear a la izquierda */
-        padding-left: 20px; /* 👈 CAMBIO: Espacio para separarlo del borde izquierdo */
+        padding-left: 0; /* 👈 CAMBIO: Espacio para separarlo del borde izquierdo */
         padding-right: 0; /* Asegura que no tenga padding derecho */
         height: 70px; 
         width: 100%;
@@ -296,7 +296,6 @@ nav ul li ul li a:hover{
         height: 300px;
         visibility: visible;
         opacity: 1;
- 
     }
 
 }
