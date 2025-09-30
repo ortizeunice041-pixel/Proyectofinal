@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Hombres</title>
+    <link rel="stylesheet" href="css/catalogodehombre.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <!--fontawesome link del footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+   <header>
+      <div class="header__superior">
+        <a class="logo" href="barra responsive/index.html">
+            <img src="images/logotipo.svg" alt="">
+        </a>
+        <div class="search">
+            <input type="search" placeholder="¿Que deseas buscar ?">
+        </div>
+      </div>
+
+      <div class="container__menu">
+
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu">
+                <img src="images/icon.svg" alt="" class="icon__menu">
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="selected"></a></li>
+                    <li><a href="#">Catalogo</a>
+                        <ul>
+                            <li><a href="catalogomujer.html">Mujer</a></li>
+                            <li><a href="catalogoHombre.html">Hombre</a></li>
+                            <li><a href="catalogoniños.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comprayventa.html">Compra y venta</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="catalogo-layout">
+  <div class="color-sidebar">
+    <h3>Filtrar por color:</h3>
+    <div class="color-column">
+      <button class="filter-btn" data-color="all">Todos</button>
+      <button class="filter-btn" data-color="azul">Azul</button>
+      <button class="filter-btn" data-color="negro">Negro</button>
+      <button class="filter-btn" data-color="gris">Gris</button>
+      <button class="filter-btn" data-color="blanco">Blanco</button>
+      <button class="filter-btn" data-color="celeste">Celeste</button>
+      <button class="filter-btn" data-color="multicolor">Multicolor</button>
+    </div>
+  </div>
+        <div class="container">
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all" >Todo</button>
+                <button class="filter-btn " data-filter="blusas" >Camisas</button>
+                <button class="filter-btn" data-filter="vestidos" >Trajes</button>
+                <button class="filter-btn" data-filter="jeans" >Pantalones</button>
+                <button class="filter-btn" data-filter="sueteres" >Suéteres y Sudaderas</button>
+            </div>
+
+            <div class="producto-grid">
+                <a class="producto-item blusas" data-color="azul" href="camisaP01.html">
+                    <img src="images/camisaP1.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camisa polo Oscar de la Renta classic fit azul con miniprint para hombre</h3>
+                        <strong class="price">$21.99</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="blanco" href="camisaP02.html">
+                    <img src="images/camisaP2.png" alt="" >
+                     <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camisa polo Oscar de la Renta classic fit texturizada para hombre</h3>
+                        <strong class="price">$16.99</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="negro" href="camisaP03.html">
+                    <img src="images/camisaP3.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Only & Sons Camisa casual slim fit con textura para hombre</h3>
+                        <strong class="price">$26.92</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="blanco" href="camisaP04.html">
+                    <img src="images/camisaP4.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Camisa Columbia PFG Bahama II blanca sólida para hombre</h3>
+                        <strong class="price">$52.92</strong>
+                    </div> 
+                </a>
+                <a class="producto-item blusas" data-color="negro" href="camisaP05.html">
+                    <img src="images/camisaP5.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camisa casual de lino Unexpected negra sólida para hombre</h3>
+                        <strong class="price">$23.18</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="multicolor" href="camisaP06.html">
+                    <img src="images/camisaP6.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Nautica Camisa casual multicolor a cuadros para hombre</h3>
+                        <strong class="price">$56.92</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="celeste" href="camisaP07.html">
+                    <img src="images/camisaP7.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camisa polo básica</h3>
+                        <strong class="price">$49.90</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="gris" href="camisaP08.html">
+                    <img src="images/camisaP8.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Camiseta Only & Sons estampado Metallica para hombre</h3>
+                        <strong class="price">$14.99</strong>
+                    </div>
+                </a>
+                <a class="producto-item blusas" data-color="blanco" href="camisaP09.html">
+                    <img src="images/camisaP9.png" alt="">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Camiseta deportiva Real Madrid cuello tipo polo blanca para hombre</h3>
+                        <strong class="price">$25.90</strong>
+                    </div>
+                </a>
+
+
+                <a class="producto-item vestidos" data-color="negro" href="trajeP10.html">
+                    <img src="images/trajeP10.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Traje de vestir classic fit Gents negro sólido para hombre</h3>
+                        <strong class="price">$129.90</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="azul" href="trajeP11.html">
+                    <img src="images/trajeP11.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Traje slim fit Carven azul sólido para hombre</h3>
+                        <strong class="price">$149.90</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="celeste" href="trajeP12.html">
+                    <img src="images/trajeP12.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Traje slim fit Zanetti Orange celeste heather para hombre</h3>
+                        <strong class="price">$159.90</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="gris" href="trajeP13.html">
+                    <img src="images/trajeP13.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Traje Zanetti Orange slim fit gris texturizado para hombre</h3>
+                        <strong class="price">$159.90</strong>
+                    </div>
+                </a>
+                <a class="producto-item vestidos" data-color="azul" href="trajeP14.html">
+                    <img src="images/trajeP14.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Trajes de vestir Oscar de la Renta tailored fit azul navy para hombre</h3>
+                        <strong class="price">$117.99</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="gris" href="trajeP15.html">
+                    <img src="images/trajeP15.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Traje de vestir tailored fit Oscar de la Renta gris claro heather para hombre</h3>
+                        <strong class="price">$179.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="celeste" href="trajeP16.html">
+                    <img src="images/trajeP16.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Traje Zanetti Orange slim fit celeste texturizado para hombre</h3>
+                        <strong class="price">$159.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="negro" href="trajeP17.html">
+                <img src="images/trajeP17.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Traje Zanetti Orange modern fit negro texturizado para hombre</h3>
+                        <strong class="price">$149.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item vestidos" data-color="azul" href="trajeP18.html">
+                <img src="images/trajeP18.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Traje Zanetti Orange slim fit azul navy heather para hombre</h3>
+                        <strong class="price">$149.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="azul" href="jeansP19.html">
+                <img src="images/jeanP19.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Pantalón twill Gents azul navy sólido para hombre</h3>
+                        <strong class="price">$13.99</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="negro" href="jeansP20.html">
+                    <img src="images/jeanP20.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Pantalón chino loose fit Only & Sons sólido para hombre</h3>
+                        <strong class="price">$17.99</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="azul" href="jeansP21.html">
+                    <img src="images/jeanP21.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Pantalón chino Unexpected slim fit azul sólido para hombre</h3>
+                        <strong class="price">$30.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="gris" href="jeansP22.html">
+                    <img src="images/jeanP22.png" alt="">
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Malla deportiva Teammate de compresión gris sólido para hombre</h3>
+                        <strong class="price">$14.99</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="negro" href="jeansP23.html">
+                    <img src="images/jeanP23.png" alt="">
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jogger Hurley negro sólido para hombre</h3>
+                        <strong class="price">$45.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="gris" href="jeansP24.html">
+                    <img src="images/jeanP24.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Dockers Pantalón casual chino gris sólido para hombre</h3>
+                        <strong class="price">$50.92</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="azul" href="jeansP25.html">
+                    <img src="images/jeanP25.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Pantalón chino Unexpected slim fit azul navy sólido para hombre</h3>
+                        <strong class="price">$35.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="negro" href="jeansP26.html">
+                    <img src="images/jeanP26.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Pantalón cargo Unexpected straight fit negro sólido para hombre</h3>
+                        <strong class="price">$30.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item jeans" data-color="gris" href="jeansP27.html">
+                    <img src="images/jeanP27.png" alt="" >
+                    <div class="texto">
+                        <div class="hidden offer">Oferta</div>
+                        <h3>Jeans tipo jogger Orange gris denim para hombre</h3>
+                        <strong class="price">$35.90</strong>
+                    </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="azul" href="sueterP28.html">
+                    <img src="images/sueterP28.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter deportivo Teammate básico azul navy para hombre</h3>
+                        <strong class="price">$14.99</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="celeste" href="sueterP29.html">
+                    <img src="images/sueterP29.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Chaqueta Only & Sons celeste denim lavada para hombre</h3>
+                        <strong class="price">$59.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="gris" href="sueterP30.html">
+                    <img src="images/sueterP30.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter Puro Ego gris con textura para hombre</h3>
+                        <strong class="price">$79.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="azul" href="sueterP31.html">
+                    <img src="images/sueterP31.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Hoodie deportivo Adidas azul para hombre</h3>
+                        <strong class="price">$65.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="celeste" href="sueterP32.html">
+                    <img src="images/sueterP32.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Chaqueta deportiva Under Armour celeste para hombre</h3>
+                        <strong class="price">$85.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="gris" href="sueterP33.html">
+                    <img src="images/sueterP33.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter deportivo Teammate Knit sólido gris para hombre</h3>
+                        <strong class="price">$25.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="negro" href="sueterP34.html">
+                    <img src="images/sueterP34.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter deportivo Teammate Knit sólido negro para hombre</h3>
+                        <strong class="price">$25.90</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="negro" href="sueterP35.html">
+                    <img src="images/sueterP35.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter deportivo Umbro color negro para hombre</h3>
+                        <strong class="price">$31.99</strong>
+                   </div>
+                </a>
+
+                <a class="producto-item sueteres" data-color="negro" href="sueterP36.html">
+                    <img src="images/sueterP36.png" alt="" >
+                    <div class="texto">
+                        <div class="offer">Oferta</div>
+                        <h3>Suéter Puro Ego negro con textura para hombre</h3>
+                        <strong class="price">$49.90</strong>
+                   </div>
+                </a>
+            </div>
+        </div>
+    </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>ClothesShop</h4>
+                <ul>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Dirección</a></li>
+                </ul>
+
+            </div>
+
+             <div class="footer-links">
+
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Envios</a></li>
+                </ul>
+
+            </div>
+
+             <div class="footer-links">
+
+                <h4>Tienda</h4>
+                <ul>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Comodidad</a></li>
+                    <li><a href="#">Estilos</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Siguenos</h4>
+                <div class="social-link">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   
+</footer>
+<script src="js/app.js"></script>
+<script src="lib/fontawesome/js/all.min.js"></script>
+</body>
+</html>
+ 
